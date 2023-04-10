@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Avance 1 - UPC</h2>
+
+<p>Hola Mundo</p>
+
+<button onclick="myTercerAlgoritmo()">boton en HTML</button>
+
+<script>
+function myTercerAlgoritmo()  {
+      var nombre = "c@rlos"
+      if (nombre.includes("a")) {
+             alert(nombre + " Existe la vocal (A)")
+      }else{
+        if (nombre.includes("i")) {
+          alert(nombre + " existe la vocal (i)")
+        }else{
+          if (nombre.includes("e")) {
+            alert(nombre + " existe la vocal (E)")
+          }else{ 
+            if (nombre.includes("u")) {
+              alert(nombre + " existe la vocal (U)")
+            }else{
+              if (nombre.includes("o")) {
+                alert(nombre + " existe la vocal (O)")
+              }else{
+              } alert("NO TIENE VOCAL A, E, i, o)")
+                         }
+                  }
+            }
+      }
+}
+</script>
+
+<!--
+*crear el Diagrama de flujo (cuaderno) y el Algoritmo (Githun)
+para saber si el nombre de la persona contiene una vocal
+-->
+</body>
+</html>
