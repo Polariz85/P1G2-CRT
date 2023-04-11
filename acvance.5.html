@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Avance 5 - UPC</h2>
+<h2>Universidad Privada Cumbre</h2>
+<p>Hola Mundo</p>
+<h1>Carlos Rodrdriguez Tejerina - 12696875</h1>
+
+<p>1.-Mostrar los pares de un Numero usando FOR<P>
+<button onclick="mostrarSoloParesDeN_FOR()">mostrarParesDeN_FOR</button>
+
+<p>2.-Contar los Numero hasta N usando for<P>
+<button onclick="contarNumero_for()">contarNumero_for</button>
+
+<p>3.-Contar los Numero hasta N usando WHILE<P>
+<button onclick="contarNumero_WHILE()">contarNumero_WHILE</button>
+
+<p>4._Mostrar los pares de un Numero usando WHILE<P>
+<button onclick="mostrarParesDeN()">mostrarSoloParesDeN</button>
+
+<p>5._mostrar numeros pares imapares de N <P>
+<button onclick="mostrarParesImparesDeN()">mostrarParesImparesDeN</button>
+
+<p>6._mostrar el factorial de un numero<P>
+<button onclick="factorial()">factorial</button>
+<br><br><br><br>
+
+<p>7.-condicionarCompuesta_AND<P>
+    <button onclick="condicionarCompuesta_AND()">condicionarCompuesta_AND</button>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+</script>
+
+</body>
+</html>
+
+<script>
+function mostrarSoloParesDeN_FOR(){
+    var numero = 15
+    var i = 1
+    while(i <= numero){
+        if(i % 2 == 0){
+          alert(i + " Es PAR")
+        }else{
+         // no hacer nada
+        }
+         i = i + 1
+     }
+    alert("FIN")
+}
+</script>
+
+</body>
+</html>
+
+<script>
+    function contarNumero_for(){
+        var numero = 5
+        for (var i = 1; i <= numero; i++) {
+          alert(i)  
+        }
+    }
+    </script>
+    
+</body>
+</html>
+
+<script>
+function mostrarNumerosParesDeN(){
+    var numero = 7
+    var i = 1
+    while(i <= numero){
+        if(i % 2 == 0){
+            alert(i + " Es PAR")
+       }else{
+            alert (i + " No es PAR")
+        }
+         i = i + 1
+     }
+    alert("FIN")
+}
+</script>
+
+</body>
+</html>
+
+
+
+<script>
+function contarNumero_WHILE(){
+    var numero = 5
+    var i = 1
+    while(i <= numero){
+      alert(i)
+      i = i + 1
+     }
+    alert("FIN")
+}
+</script>
+
+</body>
+</html>
+
+<script>
+function mostrarPartesDeN_FOR(){
+    var numero = 16
+    for (var i = 1; i <= numero; i++) {
+      if(i% 2 ==0){
+        alert(i)
+      }else{
+        //no hacer nada
+      }
+    }
+}
+</script>
+
+</body>
+</html>
+
+<script>
+function mostrarPartesDeN_FOR(){
+    var numero = 16
+    var i = 1
+    while(i <= numero){
+      alert(i)
+      i = i + 1
+     }
+    alert("FIN")
+}
+</script>
+
+</body>
+</html>
+
+
+//IF COMPUESTO
+<script>
+
+function condicionarCompuesta_AND(){
+    if(((10 > 5 ) && (7 == 8)) && (5==5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+</script>
+
+</body>
+</html>
