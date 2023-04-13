@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Avance 7 - UPC</h2>
+<hr>
+<p>Factorial de un numero</p>
+<button onclick="FactorialNumero(1)">FactorialNumero</button>
+
+<p>sumar el numero factorial de dos numeros</p>
+<button onclick="SumarFactorialAyB()">SumarFactorialAyB</button>
+
+<p>Operaciones Logicas #1</p>
+<button onclick="EjercicioUno()" > EjercicioUno</button>
+
+<p>Operaciones Logicas #2</p>
+<button onclick="EjercicioDos()" > EjercicioDos</button>
+
+<p>Operaciones Logicas #3</p>
+<button onclick="EjercicioTres()" > EjercicioTres</button>
+
+<p>Operaciones Logicas #4</p>
+<button onclick=" EjercicioCuatro()" >  EjercicioCuatro</button>
+
+<p>Operaciones Logicas #5</p>
+<button onclick=" condicionalConpuesta()" >  condicionalConpuesta</button>
+
+<p>Operaciones Logicas #6</p>
+<button onclick=" CondicionalAnidada()" > CondicionalAnidada</button>
+
+<script>
+//codigo de programacion - INICIO
+//Ejercio:convertir la siguente condicional compuesta en
+//una condicional animada en su cuaderno y codigo
+//(((5 >= 5) != (9 < 10)) || ((10 > 10) == false))
+//COMDICIONALES COMPUESTAS ||
+function condicionalConpuesta_UsandoO(){
+    if((5>9)||(7!=5)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+//CONDICINALES ANIDADAS ||
+function CondicionalAnidada_UsandoO(){
+    if(5>9){
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+        } 
+    }else{
+        if(7!=5){
+            alert("TRUE")
+        }else{
+            alert("FALSE")
+        }
+    }
+
+}   
+
+
+
+//(((5 >= 5 ) != (9 < 10)) || ((10 > 10) == false))
+function EjercicioUno(){
+    if(((5 >= 5) != (9 < 10)) || ((10 > 10) == false)){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+//(((9 < 5)) == true) || (! false || (5 == 9)))
+function EjercicioDos(){
+    if(((9 < 5) == (true)) || ((! false) || (5 == 9))){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+
+
+
+//((((7 >= 7) == true) || (false == true ))|| !(7 > 7))
+
+function EjercicioTres(){
+    if(((7 <= 7) == (true) || (false) || !(7 >= 7))){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}
+
+
+//(((true ||| ! false) && (false)) !=((false || false) != (true)))
+
+function EjercicioCuatro(){
+    if(((true || true) || (false) == (false || false) != (true))){
+        alert("TRUE")
+    }else{
+        alert("FALSE")
+    }
+}  
+
+
+function SumarfactorialAyB(){
+    var numeroA = 5 //mensaje =120
+    var numeroB = 2 //mensaje =120
+
+    var numeroA = FactorialNumero(numeroA)
+    var numeroB = FactorialNumero(numeroB)
+
+    var resultadoFinal = resultadoA + resultadoB
+    alert(resultadoFinal)//mensaje = 240
+}   
+function FactorialNumero(numero){
+    //no hay (var numero) porque es un parametro de la funcion
+  var i = 1
+  var resultado = 1
+  while (i <= numero){
+    resultado = resultado * i
+    i = i + 1
+  }
+  alert(resultado)
+  return resultado//NUMERO: La function ahora retorna un  valor 
+} 
+//codigo de programacion -FIN
+
+</script>
+</body>
+</html>
